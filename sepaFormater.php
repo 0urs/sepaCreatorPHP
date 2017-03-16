@@ -29,12 +29,12 @@ class SEPAFormater
 
 	public function init($iNbLigne, $iMontantGlobal) {
 		$this->_sCode 			    = "";
-		$this->_bGroupHeaderSet = false;
-		$this->_bEmetteurSet 	  = false;
+		$this->_bGroupHeaderSet 	= false;
+		$this->_bEmetteurSet 	  	= false;
 		$this->_bDTDSet 		    = false;
-		$this->_bPrologueSet 	  = false;
-		$this->_aArrayCode 		  = array();
-		$this->_iMontantGlobal 	= $iMontantGlobal;
+		$this->_bPrologueSet 	  	= false;
+		$this->_aArrayCode 		  	= array();
+		$this->_iMontantGlobal 		= $iMontantGlobal;
 
 		self::setPrologue();
 		self::setDTD();
